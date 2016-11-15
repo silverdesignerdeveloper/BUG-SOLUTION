@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>BUG SOLUTION</title>
+
+  <link rel="stylesheet" href="libs/bower_components/bootstrap-css-only/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <h1 class="text-center"><img src="img/logo_bug_solution.png" style="width:250px"/></h1>
+</header>
+
+<div ui-view></div>
+
+<!-- scripts -->
+<script src="libs/bower_components/angular/angular.min.js"></script>
+<script src="libs/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="libs/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+<script src="app/app.module.js"></script>
+
+<script src="app/form/form.controller.js"></script>
+
+<script src="app/result/result.controller.js"></script>
+
+<script src="app/answers/answers.controller.js"></script>
+
+<script src="app/common-services/data.service.js"></script>
+
+<script src="app/directives/error-message/error-message.directive.js"></script>
+<script src="app/directives/quick-panel/quick-panel.directive.js"></script>
+
+
+<script>
+  function addTextTag(text){
+   document.getElementById('searchInput').value = text;
+  }
+</script>
+
+
+</body>
+</html>

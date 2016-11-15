@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 style="color:red;">ERROR:</h2>
+  <h2  ng-bind-html="answers.question.title" style="color:red;">?</h2>
+  <div class="question" ng-bind-html="answers.question.body" style="color:red;"></div>
+
+  <div class="content" ng-show="!answers.loading">
+    <h2 style="color:lime;">SOLUTION:</h2>
+
+    <div class="answers-list" style="color:lime;">
+      <div class="answer" ng-repeat="answer in answers.question.answers">
+        <div ng-bind-html="answer.body"></div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show="answers.loading" class="loading"><span>Loading...</span></div>
+  <div error-message error="answers"></div>
+</div>

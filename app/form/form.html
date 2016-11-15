@@ -1,0 +1,83 @@
+<div class="container">
+  <form name="searchForm">
+    <fieldset>
+      <label for="searchInput" style="color:red">Search Bug</label>&nbsp;<label class="glyphicon glyphicon-exclamation-sign" style="color:red;"></label>
+      <input type="text" id="searchInput" name="searchInput" ng-model="form.input" required class="form-control" />
+    </fieldset>
+    <br>
+
+    <div class="tags_select">
+      <img src="img/javascript.jpg" width="50" onClick="addTextTag('JAVASCRIPT');"/>
+      <img src="img/swift.png" width="50" onClick="addTextTag('SWIFT');"/>
+      <img src="img/objectivec.png" width="50" onClick="addTextTag('OBJECTIVE-C');"/>
+      <img src="img/java.png" width="50" onClick="addTextTag('JAVA');"/>
+      <img src="img/csharp.png" width="50" onClick="addTextTag('C SHARP');"/>
+      <img src="img/cplusplus.png" width="50" onClick="addTextTag('C++');"/>
+      <img src="img/php.png" width="50" onClick="addTextTag('PHP');"/>
+      <img src="img/coffeescript.png" width="50" onClick="addTextTag('COFFEESCRIPT');"/>
+      <img src="img/typescript.png" width="50" onClick="addTextTag('TYPESCRIPT');"/>
+      <img src="img/angularjs.png" width="50" onClick="addTextTag('ANGULAR-JS');"/>
+      <img src="img/meteor.png" width="50" onClick="addTextTag('METEOR JS');"/>
+      <img src="img/html5.png" width="50" onClick="addTextTag('HTML5');"/>
+      <img src="img/css3.png" width="50" onClick="addTextTag('CSS3');"/>
+      <img src="img/sass.png" width="50" onClick="addTextTag('SASS');"/>
+      <img src="img/less.jpg" width="50" onClick="addTextTag('LESS');"/>
+      <img src="img/bootstrap.jpg" width="50" onClick="addTextTag('BOOTSTRAP');"/>
+      <img src="img/xamarin.png" width="50" onClick="addTextTag('XAMARIN');"/>
+      <img src="img/mysql.png" width="50" onClick="addTextTag('MY-SQL');"/>
+      <img src="img/jquery.jpg" width="50" onClick="addTextTag('JQUERY');"/>
+      <img src="img/ionic.png" width="50" onClick="addTextTag('IONIC');"/>
+      <img src="img/mongodb.png" width="50" onClick="addTextTag('MONGO-DB');"/>
+      <img src="img/nodejs.png" width="50" onClick="addTextTag('NODE-JS');"/>
+      <img src="img/python.png" width="50" onClick="addTextTag('PYTHON');"/>
+      <img src="img/ruby.png" width="50" onClick="addTextTag('RUBY');"/>
+      <img src="img/rails.png" width="50" onClick="addTextTag('RAILS');"/>
+      <img src="img/wordpress.png" width="50" onClick="addTextTag('WORDPRESS');"/>
+      <img src="img/drupal.png" width="50" onClick="addTextTag('DRUPAL');"/>
+      <img src="img/mean.jpg" width="50" onClick="addTextTag('MEAN.IO');"/>
+      <img src="img/react.png" width="50" onClick="addTextTag('REACT');"/>
+      <img src="img/bower.png" width="50" onClick="addTextTag('BOWER');"/>
+      <img src="img/npm.png" width="50" onClick="addTextTag('NPM');"/>
+      <img src="img/nativescript.png" width="50" onClick="addTextTag('NATIVESCRIPT');"/>
+      <img src="img/cocoapods.png" width="50" onClick="addTextTag('COCOAPODS');"/>
+      <img src="img/firebase.jpg" width="50" onClick="addTextTag('FIREBASE');"/>
+      <img src="img/intelxdk.png" width="50" onClick="addTextTag('INTEL XDK');"/>
+      <img src="img/atom.png" width="50" onClick="addTextTag('ATOM EDITOR');"/>
+      <img src="img/coda.jpg" width="50" onClick="addTextTag('CODA EDITOR');"/>
+      <img src="img/cocos2d.png" width="50" onClick="addTextTag('COCOS2D');"/>
+      <img src="img/cocos2dx.png" width="50" onClick="addTextTag('COCOS2DX');"/>
+      <img src="img/cocos.png" width="50" onClick="addTextTag('COCOS');"/>
+      <img src="img/cocoscreator.png" width="50" onClick="addTextTag('COCOS CREATOR');"/>
+      <img src="img/unity3d.png" width="50" onClick="addTextTag('UNITY3D');"/>
+      <img src="img/arduino.png" width="50" onClick="addTextTag('ARDUINO');"/>
+      <img src="img/raspberry.png" width="50" onClick="addTextTag('RASPBERRY');"/>
+      <img src="img/sirikit.png" width="50" onClick="addTextTag('SIRIKIT');"/>
+      <img src="img/cordova.png" width="50" onClick="addTextTag('CORDOVA');"/>
+      <img src="img/ngcordova.png" width="50" onClick="addTextTag('NGCORDOVA');"/>
+      <img src="img/phonegap.png" width="50" onClick="addTextTag('PHONEGAP');"/>
+      <img src="img/android.png" width="50" onClick="addTextTag('ANDROID');"/>
+      <img src="img/ios.png" width="50" onClick="addTextTag('IOS');"/>
+      <img src="img/ajax.png" width="50" onClick="addTextTag('AJAX');"/>
+      <img src="img/json.png" width="50" onClick="addTextTag('JSON');"/>
+      <img src="img/grunt.png" width="50" onClick="addTextTag('GRUNT');"/>
+      <img src="img/gulp.png" width="50" onClick="addTextTag('GULP');"/>
+      <img src="img/bitbucket.png" width="50" onClick="addTextTag('BUCKET');"/>
+      <img src="img/github.png" width="50" onClick="addTextTag('GITHUB');"/>
+      <img src="img/git.png" width="50" onClick="addTextTag('GIT');"/>
+      <img src="img/gitkraken.png" width="50" onClick="addTextTag('GIT KRAKEN');"/>
+      <img src="img/sourcetree.png" width="50" onClick="addTextTag('SOURCE TREE');"/>
+      <img src="img/visualstudio.png" width="50" onClick="addTextTag('VISUAL STUDIO');"/>
+      <img src="img/xcode.png" width="50" onClick="addTextTag('XCODE');"/>
+      <img src="img/androidstudio.png" width="50" onClick="addTextTag('ANDROID STUDIO');"/>
+      <img src="img/ubuntu.png" width="50" onClick="addTextTag('UBUNTU');"/>
+    </div>
+
+    <br/>
+
+    <input class="btn-block btn-lg btn btn-success" type="submit" ng-click="form.getResult(form, searchForm)" value="Cerca Soluzione"/>
+
+  </form>
+
+  <div ng-show="form.loading" class="loading"><span>Loading...</span></div>
+  <div error-message error="form"></div>
+</div>
